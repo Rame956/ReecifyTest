@@ -11,12 +11,6 @@ import java.net.UnknownHostException;
 @SpringBootApplication
 public class ReecifyTestApplication {
 
-    @RequestMapping("/")
-    @ResponseBody
-    String home() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) throws UnknownHostException {
         SpringApplication.run(ReecifyTestApplication.class, args);
         System.out.println(InetAddress.getLocalHost().getHostAddress());
